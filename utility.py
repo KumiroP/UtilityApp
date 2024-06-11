@@ -14,7 +14,7 @@ class UtilityApp:
         self.root.resizable(False, False)  # Prevent resizing
         
         # Set the application icon
-        icon_path = r'C:\Users\Info Agedis\Desktop\[APP]\[utility_app]\[1.0.0]\icona.ico'
+        icon_path = r'C:\Users\Info Agedis\Desktop\[APP]\[utility_app]\[1.0.1]\icona.ico'
         if os.path.exists(icon_path):
             self.root.iconbitmap(icon_path)
         else:
@@ -159,7 +159,7 @@ class UtilityApp:
         img.save(img_path, "JPEG", dpi=(72, 72), quality=85)
 
     def create_gif_label(self, parent):
-        self.gif_frames = [ImageTk.PhotoImage(img) for img in ImageSequence.Iterator(Image.open(r'C:\Users\Info Agedis\Desktop\[APP]\[utility_app]\[1.0.0]\loading.gif'))]
+        self.gif_frames = [ImageTk.PhotoImage(img) for img in ImageSequence.Iterator(Image.open(r'C:\Users\Info Agedis\Desktop\[APP]\[utility_app]\[1.0.1]\loading.gif'))]
         self.gif_index = 0
         label = ttkb.Label(parent)
         self.update_gif(label)
